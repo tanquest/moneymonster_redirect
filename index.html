@@ -11,12 +11,11 @@
 }
       
 </script> -->
-      <script>  
-            f_redirect();
-
+      <script type="text/javascript">  
+            
             function f_redirect() {
              // リダイレクトしたい動画URLを記述
-            var arr = [
+            let arr = [
             'https://www.tanqfamily.com/moneymonster-qr21',
             'https://www.tanqfamily.com/moneymonster-qr22',
             'https://www.tanqfamily.com/moneymonster-qr23',
@@ -24,12 +23,13 @@
             'https://www.tanqfamily.com/moneymonster-qr25',
             'https://www.tanqfamily.com/moneymonster-qr26'
             ];
-             var num = arr.length;
+             let num = arr.length;
              if (arr.length == 0) return false;
 
-             var num = Math.floor(Math.random()*arr.length);
+             let num = Math.floor(Math.random()*arr.length);
              location.href = arr[num]; 
       }
+            window.onLoad(f_redirect());
       </script>
       
 </head>
